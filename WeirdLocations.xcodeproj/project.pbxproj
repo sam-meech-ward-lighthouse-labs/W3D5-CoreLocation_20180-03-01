@@ -13,6 +13,8 @@
 		2240ADB02049EED00077A782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2240ADAF2049EED00077A782 /* Assets.xcassets */; };
 		2240ADB32049EED00077A782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2240ADB12049EED00077A782 /* LaunchScreen.storyboard */; };
 		2240ADB62049EED00077A782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240ADB52049EED00077A782 /* main.m */; };
+		2240ADBE2049F4560077A782 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240ADBD2049F4560077A782 /* Place.m */; };
+		229620A92049FC7500231B31 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229620A82049FC7500231B31 /* LocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		2240ADB22049EED00077A782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2240ADB42049EED00077A782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2240ADB52049EED00077A782 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2240ADBC2049F4560077A782 /* Place.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		2240ADBD2049F4560077A782 /* Place.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		229620A72049FC7500231B31 /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		229620A82049FC7500231B31 /* LocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				2240ADA72049EED00077A782 /* AppDelegate.m */,
 				2240ADA92049EED00077A782 /* ViewController.h */,
 				2240ADAA2049EED00077A782 /* ViewController.m */,
+				229620A72049FC7500231B31 /* LocationViewController.h */,
+				229620A82049FC7500231B31 /* LocationViewController.m */,
+				2240ADBC2049F4560077A782 /* Place.h */,
+				2240ADBD2049F4560077A782 /* Place.m */,
 				2240ADAC2049EED00077A782 /* Main.storyboard */,
 				2240ADAF2049EED00077A782 /* Assets.xcassets */,
 				2240ADB12049EED00077A782 /* LaunchScreen.storyboard */,
@@ -145,6 +155,8 @@
 				2240ADAB2049EED00077A782 /* ViewController.m in Sources */,
 				2240ADB62049EED00077A782 /* main.m in Sources */,
 				2240ADA82049EED00077A782 /* AppDelegate.m in Sources */,
+				2240ADBE2049F4560077A782 /* Place.m in Sources */,
+				229620A92049FC7500231B31 /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

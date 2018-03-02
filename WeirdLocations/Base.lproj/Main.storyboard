@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bwr-Lg-3ct">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,60 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yWK-KP-nlr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yWK-KP-nlr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4am-0H-8Dt"/>
+                            <constraint firstItem="yWK-KP-nlr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MqC-6N-ecj"/>
+                            <constraint firstItem="yWK-KP-nlr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="PNj-Pd-ZoO"/>
+                            <constraint firstItem="yWK-KP-nlr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="san-DR-0pL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="yWK-KP-nlr" id="Hfg-pZ-kBQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-92" y="76.911544227886068"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="JiY-7t-gPA">
+            <objects>
+                <viewController id="Bwr-Lg-3ct" customClass="LocationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jJM-5I-qlJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VCW-ii-SLF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VCW-ii-SLF" firstAttribute="trailing" secondItem="oMV-P6-GrF" secondAttribute="trailing" id="Usd-vN-zs1"/>
+                            <constraint firstItem="VCW-ii-SLF" firstAttribute="bottom" secondItem="oMV-P6-GrF" secondAttribute="bottom" id="dv8-Qa-OhQ"/>
+                            <constraint firstItem="VCW-ii-SLF" firstAttribute="top" secondItem="jJM-5I-qlJ" secondAttribute="top" id="q4u-vb-DSg"/>
+                            <constraint firstItem="VCW-ii-SLF" firstAttribute="leading" secondItem="oMV-P6-GrF" secondAttribute="leading" id="zb6-Ue-AEO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oMV-P6-GrF"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="VCW-ii-SLF" id="tdk-kW-887"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ma6-Sr-eim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="33.733133433283363"/>
         </scene>
     </scenes>
 </document>
